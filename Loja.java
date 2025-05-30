@@ -47,7 +47,11 @@ public class Loja {
             return salarioBaseFuncionario;
         } 
         return quantidadeFuncionarios*salarioBaseFuncionario;
+    }
 
+    @Override
+    public String toString() {
+        return "Loja" + " nome: " + nome + " quantidade de funcionários: " + quantidadeFuncionarios + "salário base: " + salarioBaseFuncionario ;
     }
 
 }
