@@ -21,4 +21,12 @@ public class Loja {
         return nome;
     }
 
+    public int getQuantidadeFuncionarios(){
+        return quantidadeFuncionarios;
+    }
+
+    public double getSalarioBaseFuncionario(){
+        return salarioBaseFuncionario;
+    }
+
 }
