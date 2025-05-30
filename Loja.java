@@ -34,4 +34,12 @@ public class Loja {
         this.nome = nome;
     }
 
+    public void setQuantidadeFuncionario(int quantidadeFuncionarios){
+        this.quantidadeFuncionarios = quantidadeFuncionarios;
+    }
+
+    public void setSalarioBaseFuncionario(double salarioBaseFuncionario){
+        this.salarioBaseFuncionario = salarioBaseFuncionario;
+    }
+
 }
