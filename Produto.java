@@ -10,6 +10,13 @@ public class Produto {
 
     //GETTERS
 
+    public String getNome() {
+        return nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
 
     //SETTERS
   
