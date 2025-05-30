@@ -42,4 +42,12 @@ public class Loja {
         this.salarioBaseFuncionario = salarioBaseFuncionario;
     }
 
+    public double gastosComSalario(){
+        if(salarioBaseFuncionario == -1){
+            return salarioBaseFuncionario;
+        } 
+        return quantidadeFuncionarios*salarioBaseFuncionario;
+
+    }
+
 }
