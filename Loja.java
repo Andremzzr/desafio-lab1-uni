@@ -54,4 +54,18 @@ public class Loja {
         return "Loja" + " nome: " + nome + " quantidade de funcionários: " + quantidadeFuncionarios + "salário base: " + salarioBaseFuncionario ;
     }
 
+    public String tamanhoDaLoja(){
+        if (quantidadeFuncionarios <=10){
+            return "P";
+        }
+
+        else if (quantidadeFuncionarios <=30){
+            return "M";
+        }
+
+        else {
+            return "G";
+        }
+    }
+
 }
