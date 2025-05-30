@@ -29,4 +29,9 @@ public class Loja {
         return salarioBaseFuncionario;
     }
 
+    //SETTERS
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
 }
