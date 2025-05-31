@@ -49,7 +49,7 @@ public class Endereco {
 
      //SETTERS
   
-     public void setnomeDaRua(String nomeDaRua) {
+     public void setNomeDaRua(String nomeDaRua) {
         this.nomeDaRua = nomeDaRua;
     }
 

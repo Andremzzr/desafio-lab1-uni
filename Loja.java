@@ -34,7 +34,7 @@ public class Loja {
         this.nome = nome;
     }
 
-    public void setQuantidadeFuncionario(int quantidadeFuncionarios){
+    public void setQuantidadeFuncionarios(int quantidadeFuncionarios){
         this.quantidadeFuncionarios = quantidadeFuncionarios;
     }
 
@@ -54,17 +54,17 @@ public class Loja {
         return "Loja" + " nome: " + nome + " quantidade de funcionários: " + quantidadeFuncionarios + "salário base: " + salarioBaseFuncionario ;
     }
 
-    public String tamanhoDaLoja(){
+    public char tamanhoDaLoja(){
         if (quantidadeFuncionarios <=10){
-            return "P";
+            return 'P';
         }
 
         else if (quantidadeFuncionarios <=30){
-            return "M";
+            return 'M';
         }
 
         else {
-            return "G";
+            return 'G';
         }
     }
 
