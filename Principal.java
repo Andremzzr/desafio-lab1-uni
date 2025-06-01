@@ -26,13 +26,13 @@ public class Principal {
                         System.out.print("Nome da loja: ");
                         String nomeLoja = scanner.nextLine();
                         System.out.print("Quantidade de funcionários: ");
-                        int qtFunc = scanner.nextInt();
+                        int qtdFuncionarios = scanner.nextInt();
                         scanner.nextLine();
                         System.out.print("Salário base dos funcionários: ");
-                        double salBase = scanner.nextDouble();
+                        double salarioBase = scanner.nextDouble();
                         scanner.nextLine();
 
-                        System.out.println("-- Endereço da Loja --");
+                        System.out.println("--- Endereço da Loja ---");
                         System.out.print("Nome da rua: ");
                         String rua = scanner.nextLine();
                         System.out.print("Cidade: ");
@@ -50,25 +50,25 @@ public class Principal {
 
                         Endereco enderecoLoja = new Endereco(rua, cidade, estado, pais, cep, numero, complemento);
 
-                        System.out.println("-- Data de Fundação --");
+                        System.out.println("--- Data de Fundação ---");
                         System.out.print("Dia da fundação: ");
-                        int diaF = scanner.nextInt();
+                        int dia = scanner.nextInt();
                         scanner.nextLine();
                         System.out.print("Mês da fundação: ");
-                        int mesF = scanner.nextInt();
+                        int mes = scanner.nextInt();
                         scanner.nextLine();
                         System.out.print("Ano da fundação: ");
-                        int anoF = scanner.nextInt();
+                        int ano = scanner.nextInt();
                         scanner.nextLine();
 
-                        Data dataFundacao = new Data(diaF, mesF, anoF);
+                        Data dataFundacao = new Data(dia, mes, ano);
                         scanner.nextLine();
 
-                        loja = new Loja(nomeLoja, qtFunc, salBase, enderecoLoja, dataFundacao);
+                        loja = new Loja(nomeLoja, qtdFuncionarios, salarioBase, enderecoLoja, dataFundacao);
                         System.out.println("Loja '" + loja.getNome() + "' criada com sucesso!");
 
                     } else {
-                        System.out.println("ERRO: Uma loja já foi criada neste cadastro.");
+                        System.out.println("erro: Uma loja já foi criada neste cadastro.");
                     }
                     break;
 
@@ -100,17 +100,17 @@ public class Principal {
                         System.out.println("Produto '" + produto.getNome() + "' criado com sucesso!");
 
                     } else {
-                        System.out.println("ERRO: Um produto já foi criado neste cadastro.");
+                        System.out.println("erro: Um produto já foi criado neste cadastro.");
                     }
                     break;
 
                 case 3:
-                    System.out.println("\nSaindo do sistema...");
+                    System.out.println("\n Fechando sistema...");
                     break;
 
                 default:
                     if(opcao != 0) {
-                        System.out.println("\nOpção inválida. Por favor, escolha 1, 2 ou 3.");
+                        System.out.println("\nOpção inválida. Escolha 1, 2 ou 3.");
                     }
                     break;
             }
