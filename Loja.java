@@ -46,6 +46,10 @@ public class Loja {
         return dataFundacao;
     }
 
+    public Produto[] getEstoqueProdutos() {
+        return estoqueProdutos;
+    }
+
     //SETTERS
     public void setNome(String nome) {
         this.nome = nome;
