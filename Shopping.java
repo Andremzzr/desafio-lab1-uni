@@ -12,7 +12,7 @@ public class Shopping {
         this.lojas = new Loja[qtdMaxLojas];
      }
 
-     public int getqtdMaxLojas() {
+     public int getQtdMaxLojas() {
          return qtdMaxLojas;
      }
 
@@ -58,6 +58,45 @@ public class Shopping {
             }
         }
         return false;
+    }
+
+    public int quantidadeLojasPorTipo(String tipoLoja) {
+
+        if (!tipoLoja.equals("Informática") && !tipoLoja.equals("Vestuário") && 
+            !tipoLoja.equals("Alimentação") && !tipoLoja.equals("Bijuteria") && 
+            !tipoLoja.equals("Cosmético")) {
+            return -1;
+        }
+
+        int contador = 0;
+
+        for (int i = 0; i < lojas.length; i++) {
+            Loja loja = lojas[i];
+            if (loja != null) {
+                if ((tipoLoja.equals("Informática") && loja instanceof Informatica) || (tipoLoja.equals("Alimentação") && loja instanceof Alimentacao) || (tipoLoja.equals("Bijuteria") && loja instanceof Bijuteria) || (tipoLoja.equals("Vestuário") && loja instanceof Vestuario) || (tipoLoja.equals("Cosmético") && loja instanceof Cosmetico)) {
+                    contador++;
+                }
+            }
+        }
+        return contador;
+    }
+
+    public Informatica lojaSeguroMaisCaro() {
+        Informatica lojaMaisCaro = null;
+        double maiorSeguro = 0.0;
+
+        for (int i = 0; i < lojas.length; i++) {
+            Loja loja = lojas[i];
+            if (lojas[i] != null && lojas[i] instanceof Informatica) {
+                Informatica lojaInfo = (Informatica) loja;
+                if (lojaInfo.getSeguroEletronicos() > maiorSeguro ) {
+                    lojaMaisCaro = lojaInfo;
+                    maiorSeguro = lojaInfo.getSeguroEletronicos();
+                }
+            }
+        } 
+
+        return lojaMaisCaro;
     }
 
     @Override
