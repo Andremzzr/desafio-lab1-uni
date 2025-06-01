@@ -49,20 +49,21 @@ public class Produto {
         
         if (anoComparacao > anoValidade) {
             return true;
+        }       
+        else if (anoComparacao < anoValidade) {
+                    return false;
+        }
 
-}       else if (anoComparacao < anoValidade) {
-            return false;
-}
         if (mesComparacao > mesValidade) {
             return true;
-
-}       else if (mesComparacao < mesValidade) {
+        }
+        else if (mesComparacao < mesValidade) {
             return false;
-}
+        }
 
         return diaComparacao >= diaValidade;
 
-        }
+    }
         
 
     @Override
@@ -70,4 +71,4 @@ public class Produto {
         return "Produto: " + " nome: " + nome + " preco: " + preco;
     }
 
-}
+} 
