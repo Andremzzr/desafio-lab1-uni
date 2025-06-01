@@ -73,7 +73,7 @@ public class Loja {
 
     @Override
     public String toString() {
-        return "Loja" + " nome: " + nome + " quantidade de funcionários: " + quantidadeFuncionarios + "salário base: " + salarioBaseFuncionario ;
+        return "Loja" + " nome: " + nome + " quantidade de funcionários: " + quantidadeFuncionarios + "salário base: " + salarioBaseFuncionario + "Endereço:" + endereco + "Data de fundação" + dataFundacao;   
     }
 
     public char tamanhoDaLoja(){
