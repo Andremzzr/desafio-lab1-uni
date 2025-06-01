@@ -101,7 +101,14 @@ public class Shopping {
 
     @Override
     public String toString() {
-        return "Shopping: " + nome + "Endereço: " + endereco + "Quantidade máxima de lojas: " + qtdMaxLojas + "Lojas: " + lojas;
+        String lojasString = "";
+        for (int i = 0; i < lojas.length; i++) {
+            Loja loja = lojas[i];
+            if (loja != null) {
+                lojasString += loja + " ";
+            }
+        } 
+        return "Shopping: " + nome + "Endereço: " + endereco + "Quantidade máxima de lojas: " + qtdMaxLojas + "Lojas: " + lojasString;
     }
 
     
