@@ -31,6 +31,9 @@ public class Principal {
                         System.out.print("Salário base dos funcionários: ");
                         double salarioBase = scanner.nextDouble();
                         scanner.nextLine();
+                        System.out.print("Quantidade maxima de Produtos: ");
+                        int qtdMaxProdutos = scanner.nextInt();
+                        scanner.nextLine();
 
                         System.out.println("--- Endereço da Loja ---");
                         System.out.print("Nome da rua: ");
@@ -64,7 +67,7 @@ public class Principal {
                         Data dataFundacao = new Data(dia, mes, ano);
                         scanner.nextLine();
 
-                        loja = new Loja(nomeLoja, qtdFuncionarios, salarioBase, enderecoLoja, dataFundacao);
+                        loja = new Loja(nomeLoja, qtdFuncionarios, salarioBase, enderecoLoja, dataFundacao, qtdMaxProdutos);
                         System.out.println("Loja '" + loja.getNome() + "' criada com sucesso!");
 
                     } else {
