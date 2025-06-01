@@ -13,10 +13,12 @@ public class Cosmetico extends Loja {
         this.taxaComercializacao = taxaComercializacao;
     }
 
+    //GETTERS
     public double getTaxaComercializacao() {
         return taxaComercializacao;
     }
 
+    //SETTERS
     public void setTaxaComercializacao(double taxaComercializacao) {
         this.taxaComercializacao = taxaComercializacao;
     }
