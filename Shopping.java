@@ -1,21 +1,19 @@
-import java.util.Arrays;
-
 public class Shopping {
 
     private String nome;
     private Endereco endereco;
     private Loja[] lojas;
-    private int qtdMaxProdutos;
+    private int qtdMaxLojas;
 
-     public Shopping(String nome, Endereco endereco, int qtdMaxProdutos) {
+     public Shopping(String nome, Endereco endereco, int qtdMaxLojas) {
         this.nome = nome;
         this.endereco = endereco;
-        this.qtdMaxProdutos = qtdMaxProdutos;
-        this.lojas = new Loja[qtdMaxProdutos];
+        this.qtdMaxLojas = qtdMaxLojas;
+        this.lojas = new Loja[qtdMaxLojas];
      }
 
-     public int getQtdMaxProdutos() {
-         return qtdMaxProdutos;
+     public int getqtdMaxLojas() {
+         return qtdMaxLojas;
      }
 
       public String getNome() {
@@ -64,7 +62,7 @@ public class Shopping {
 
     @Override
     public String toString() {
-        return "Shopping: " + nome + "Endereço: " + endereco + "Quantidade máxima de lojas: " + qtdMaxProdutos + "Lojas: " + lojas;
+        return "Shopping: " + nome + "Endereço: " + endereco + "Quantidade máxima de lojas: " + qtdMaxLojas + "Lojas: " + lojas;
     }
 
     
