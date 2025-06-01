@@ -64,8 +64,8 @@ public class Principal {
                         Data dataFundacao = new Data(diaF, mesF, anoF);
                         scanner.nextLine();
 
-                        Loja lojaCriada = new Loja(nomeLoja, qtFunc, salBase, enderecoLoja, dataFundacao);
-                        System.out.println("Loja '" + lojaCriada.getNome() + "' criada com sucesso!");
+                        loja = new Loja(nomeLoja, qtFunc, salBase, enderecoLoja, dataFundacao);
+                        System.out.println("Loja '" + loja.getNome() + "' criada com sucesso!");
 
                     } else {
                         System.out.println("ERRO: Uma loja já foi criada neste cadastro.");
@@ -115,11 +115,22 @@ public class Principal {
                     break;
             }
 
+            if(loja != null && produto != null) {
+                Data dataComparacao = new Data(20, 10, 2023);
+
+                if(produto.estaVencido(dataComparacao)) {
+                    System.out.println("\nPRODUTO VENCIDO");
+                } else {
+                    System.out.println("\nPRODUTO NÃO VENCIDO");
+                }
+                System.out.println(loja);
+            }
+
         }
             
         } 
         
 
 
-    }
+}
     
