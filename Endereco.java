@@ -17,7 +17,7 @@ public class Endereco {
         this.complemento = complemento; 
      }
 
-            //GETTERS
+    //GETTERS
 
     public String getNomeDaRua() {
         return nomeDaRua;
@@ -47,7 +47,7 @@ public class Endereco {
         return complemento;
     }
 
-     //SETTERS
+    //SETTERS
   
      public void setNomeDaRua(String nomeDaRua) {
         this.nomeDaRua = nomeDaRua;
