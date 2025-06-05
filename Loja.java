@@ -80,7 +80,14 @@ public class Loja {
 
     @Override
     public String toString() {
-        return "Loja" + " nome: " + nome + " quantidade de funcionários: " + quantidadeFuncionarios + "salário base: " + salarioBaseFuncionario + "Endereço:" + endereco + "Data de fundação" + dataFundacao;   
+        String produtosString = "";
+        for (int i = 0; i < estoqueProdutos.length; i++) {
+            Produto produto = estoqueProdutos[i];
+            if (produto != null) {
+                produtosString += produto + " ";
+            }
+        } 
+        return "Loja" + " nome: " + nome + " quantidade de funcionários: " + quantidadeFuncionarios + " salário base: " + salarioBaseFuncionario + " Endereço:" + endereco + " Data de fundação" + dataFundacao + " Estoque de Produtos: " + produtosString;   
     }
 
     public char tamanhoDaLoja(){

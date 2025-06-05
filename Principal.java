@@ -9,7 +9,7 @@ public class Principal {
         int opcao = 0;
         
         while (opcao != 3) {
-            System.out.println("\n--- MENU ---\n[1] Criar uma loja\n[2] Criar um produto\n[3] Sair\nEscolha uma opção: ");
+            System.out.println("\n### MENU ###\n[1] Criar uma loja\n[2] Criar um produto\n[3] Sair\nEscolha uma opção: ");
             
             opcao = scanner.nextInt();
             scanner.nextLine();
@@ -17,7 +17,7 @@ public class Principal {
             switch (opcao) {
                 case 1:
                     if (loja == null) {
-                        System.out.println("\n--- Cadastro da Loja ---");
+                        System.out.println("\n### Cadastro da Loja ###");
                         System.out.print("Nome da loja: ");
                         String nomeLoja = scanner.nextLine();
                         System.out.print("Quantidade de funcionários: ");
@@ -30,7 +30,7 @@ public class Principal {
                         int qtdMaxProdutos = scanner.nextInt();
                         scanner.nextLine();
 
-                        System.out.println("--- Endereço da Loja ---");
+                        System.out.println("### Endereço da Loja ###");
                         System.out.print("Rua: ");
                         String rua = scanner.nextLine();
                         System.out.print("Cidade: ");
@@ -48,7 +48,7 @@ public class Principal {
 
                         Endereco enderecoLoja = new Endereco(rua, cidade, estado, pais, cep, numero, complemento);
 
-                        System.out.println("--- Data de Fundação ---");
+                        System.out.println("### Data de Fundação ###");
                         System.out.print("Dia da fundação: ");
                         int dia = scanner.nextInt();
                         scanner.nextLine();
@@ -72,12 +72,12 @@ public class Principal {
 
                 case 2:
                     if (produto == null) {
-                        System.out.println("\n--- Cadastro do Produto ---");
+                        System.out.println("\n### Cadastro do Produto ###");
 
-                        System.out.print("Nome do produto: ");
+                        System.out.print("Nome: ");
                         String nomeProd = scanner.nextLine();
 
-                        System.out.print("Preço do produto: ");
+                        System.out.print("Preço: ");
                         double precoProd = scanner.nextDouble();
                         scanner.nextLine();
 
