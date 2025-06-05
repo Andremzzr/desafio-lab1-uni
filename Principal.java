@@ -31,7 +31,7 @@ public class Principal {
                         scanner.nextLine();
 
                         System.out.println("--- Endereço da Loja ---");
-                        System.out.print("Nome da rua: ");
+                        System.out.print("Rua: ");
                         String rua = scanner.nextLine();
                         System.out.print("Cidade: ");
                         String cidade = scanner.nextLine();
