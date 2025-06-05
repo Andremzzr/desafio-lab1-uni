@@ -9,9 +9,8 @@ public class Produto {
         this.dataValidade = dataValidade;
     }
 
-
     //GETTERS
-
+    
     public String getNome() {
         return nome;
     }

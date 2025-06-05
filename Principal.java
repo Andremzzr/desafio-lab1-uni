@@ -9,12 +9,7 @@ public class Principal {
         int opcao = 0;
         
         while (opcao != 3) {
-            System.out.println("\n=== MENU ===");
-            System.out.println("(1) criar uma loja");
-            System.out.println("(2) criar um produto");
-            System.out.println("(3) sair");
-            System.out.print("Escolha uma opção: ");
-
+            System.out.println("\n--- MENU ---\n[1] Criar uma loja\n[2] Criar um produto\n[3] Sair\nEscolha uma opção: ");
             
             opcao = scanner.nextInt();
             scanner.nextLine();
